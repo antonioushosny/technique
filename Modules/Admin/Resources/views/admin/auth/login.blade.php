@@ -18,7 +18,7 @@
     <meta name="keyword" content="">
     <link rel="icon" href="{{ asset('backend/img/logo.png') }}" type="image/png" sizes="16x16">
 
-    <title>Adam</title>
+    <title>{{__('admin::lang.siteTitle')}}</title>
     <!-- Icons-->
     <link href="{{ asset('vendors/@coreui/icons/css/coreui-icons.min.css') }}" rel="stylesheet">
     <link href="{{ asset('vendors/flag-icon-css/css/flag-icon.min.css') }}" rel="stylesheet">

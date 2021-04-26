@@ -49,20 +49,7 @@
                   <div class="col-12 col-md-10">{{ $contactus->contact_us_message }}</div>
                 </div>
               </li>
-              <li class="list-group-item">
-                <div class="row">
-                  <div class="col-12 col-md-2"><strong>{{ __('admin::lang.type') }}</strong></div>
-                  <div class="col-12 col-md-10">
-                      @if ($contactus->contact_us_type == 2)
-                        <span class="p-2 badge badge-warning">{{ __('admin::lang.Unspecified') }}</span>
-                      @elseif ($contactus->contact_us_type == 1)
-	          						<span class="p-2 badge badge-success">{{ __('admin::lang.Suggestion') }}</span>
-	          					@else
-	          						<span class="p-2 badge badge-secondary">{{ __('admin::lang.complaint') }}</span>
-	          					@endif
-                  </div>
-                </div>
-              </li>
+             
               <li class="list-group-item">
                 <div class="row">
                   <div class="col-12 col-md-2"><strong>{{ __('admin::lang.status') }}</strong></div>

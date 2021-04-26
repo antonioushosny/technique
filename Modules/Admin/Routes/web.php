@@ -48,10 +48,29 @@ Route::prefix('admin')
 		 */
 	    Route::resource('advertisements', 'AdvertisementsController');
 
-	    /**
-		 * Reports Routes
+	  	/**
+		 * News Routes
 		 */
-	  
+	    Route::resource('news', 'NewsController');
+
+	  	/**
+		 * Videos Routes
+		 */
+		Route::resource('videos', 'VideosController');
+		
+		/**
+		 * Comparisons Routes
+		 */
+	    Route::resource('comparisons', 'ComparisonsController');	
+		
+		/**
+		 * Phones Routes
+		 */
+		Route::resource('phones', 'PhonesController');
+		Route::get('phones/comparisons/{phone}', 'PhonesController@comparisons')->name('phones.comparisons');
+		Route::post('phones/comparisons/update', 'PhonesController@saveComparisons')->name('phones.saveComparisons');
+
+		
 		
 	    /**
 		 * ContactUs Routes

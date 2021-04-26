@@ -5,7 +5,7 @@ return [
 	 * General
 	 */ 
 	'home' 					=> 'Home',
-	'siteTitle'				=>	'Abafes',
+	'siteTitle'				=>	'Technique',
 	'adminPanel'			=>	'Admin Panel',
 	'selectStatus' 			=> 'Select Status',
 	'website'				=>	'Website',
@@ -53,12 +53,12 @@ return [
 	'type'					=>	'Type',
 	'message'				=>	'Message',
 	'phone'					=>	'Phone',
-	'infos'					=>	'About Abafes',
-	'info'					=>	'About Abafes',
+	'infos'					=>	'About Technique',
+	'info'					=>	'About Technique',
 	'privacyPolicy'			=>	'Privacy Policy',
 	'termsConditions'		=>	'Terms & Conditions',
 	'page'					=>	'Page',
-	'aboutProject'			=>	'About Abafes ',
+	'aboutProject'			=>	'About Technique ',
 	'connectWithUs'			=> 'Connect With Us',
 	'gps'					=>	'GPS',
 	'createdDone'			=>	'Successfully Added',
@@ -76,7 +76,6 @@ return [
 	'from'					=>	'from',
 	'to'					=>	'to',
 	'general_data'			=> 'general data',
-	'aboutAbafes'			=> 'about Abafes',
 	'aboutus'				=> 'aboutus',
 	'gallery'				=> 'gallery' ,
 
@@ -121,6 +120,54 @@ return [
 	'advertisements_text' 	=> 'Advertisement Text',
 	'mobile_img' 			=> 'Mobile Image',
 	
+	
+	/**
+	 * Phones
+	 */
+	'phones' 		=> 'Phones',
+	'phoneDetails'	=>	'Phone Details',
+	'phoneCreated' 	=> 'Phone Created',
+	'phoneUpdated' 	=> 'Phone Updated',
+	'phoneDeleted' 	=> 'Phone Deleted',
+	'phones_title' 	=> 'Phone Name',
+	'phones_image' 	=> 'Phone Image',
+ 
+	
+	/**
+	 * News
+	 */
+	'news' 			=> 'News',
+	'newDetails'	=> 'News Details',
+	'newCreated' 	=> 'News Created',
+	'newUpdated' 	=> 'News Updated',
+	'newDeleted' 	=> 'News Deleted',
+	'news_desc' 	=> 'News Text',
+	'news_title' 	=> 'News Title',
+	'news_image' 	=> 'News Image',
+
+	/**
+	 * Videos
+	 */
+	'videos' 		=> 'Videos',
+	'videoDetails'	=> 'Video Details',
+	'videoCreated' 	=> 'Video Created',
+	'videoUpdated' 	=> 'Video Updated',
+	'videoDeleted' 	=> 'Video Deleted',
+	'videos_title' 	=> 'Video Title',
+	'videos_url'	=> 'Video Url',
+	'video'			=> 'Video',
+		/**
+	 * Comparisons
+	 */
+	'comparisons' 		=> 'Comparisons',
+	'comparisonDetails'	=>	'Comparison Details',
+	'comparisonCreated' => 'Comparison Created',
+	'comparisonUpdated' => 'Comparison Updated',
+	'comparisonDeleted' => 'Comparison Deleted',
+	'comparisons_text' 	=> 'Comparison Text',
+	'phones_comparisons_text_ar'=> 'Comparison Text In Arabic',
+	'phones_comparisons_text_en'=> 'Comparison Text In English',
+	'phoneComparisonUpdated'	=> 'Comparison Data Updated',
 
 	/**
 	 * ContactUs
@@ -129,7 +176,11 @@ return [
 	'contactus'				=>	'Contact Us',
 	'complaint'                 =>  'Complaint',
     'Suggestion'                =>  'Suggestion ',
-    'Unspecified'                =>  'Unspecified ',
+	'Unspecified'                =>  'Unspecified ',
+	'contactusCreated'		=> 'Message Created',
+	'contactusUpdated'		=> 'Message Updated',
+	'contactusDeleted'		=> 'Message Deleted',
+ 
 
 	/**
 	 * contacts
@@ -155,7 +206,7 @@ return [
 	'info_key'				=>	'Title',
 	'info_value'			=>	'Text',
 	'info_desc'				=>	'Description',
-	'info_about'			=>	'About Abafes',
+	'info_about'			=>	'About Technique',
 	'info_mission'			=>	'Mission',
 	'info_vision'			=>	'Vision',
 	'info_message'			=>	'Message',

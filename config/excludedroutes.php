@@ -15,5 +15,7 @@ return [
 	'admin.contacts.update',
 	'admin.contacts.view',
 	'admin.contacts.show',
-
+	'admin.phones.comparisons',
+	'admin.phones.saveComparisons',
+	
   ];

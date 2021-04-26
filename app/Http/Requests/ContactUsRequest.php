@@ -19,7 +19,7 @@ class ContactUsRequest extends FormRequest
 			'contact_us_phone' => 'required',
 			'contact_us_email' => 'nullable|email',
 			'contact_us_message' => 'required',
-			'contact_us_type'		=> 'required',
+	 
 		];
 
 		$data = $this->request->get('contact_us_email');

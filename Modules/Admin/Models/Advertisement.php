@@ -7,7 +7,7 @@ use App\Models\StorageHandle;
 
 class Advertisement extends Model
 {
-    use \Dimsav\Translatable\Translatable, StorageHandle;
+    use  StorageHandle;
     protected $connection = 'mysql';
     // use   StorageHandle;
 
@@ -18,15 +18,7 @@ class Advertisement extends Model
      */
     protected $primaryKey = 'advertisements_id';
 
-
-    /**
-     * Translated attributes.
-     * 
-     * @var array
-     */
-    public $translatedAttributes =  [
-        'advertisements_text', 'advertisements_img','advertisements_mobile_img'
-    ];
+ 
 
     /**
      * 
@@ -43,10 +35,58 @@ class Advertisement extends Model
      * @var array
      */
     protected $fillable = [
-        'advertisements_name','advertisements_url', 'advertisements_status','shops_id','advertisements_color','advertisements_view_page'
+        'advertisements_name','advertisements_url', 'advertisements_status','shops_id','advertisements_color', 'advertisements_img','advertisements_mobile_img'
     ];
 
+    /**
+     * Set advertisement image
+     * 
+     * @param string $file
+     */
+    public function setAdvertisementsImgAttribute($file)
+    {
+        
+        if ($file) {
+            if (is_string($file)) {
+                $this->attributes['advertisements_img'] = $file;
+            } else {
+                $current_name = $this->currentName($file);
 
+                $this->originalImage($file, $current_name);
+                $this->mediumImage($file, $current_name,null,400); 
+                $this->thumbImage($file, $current_name,100,null);
+
+                $this->attributes['advertisements_img'] = $current_name;
+            }
+        } else {
+            $this->attributes['advertisements_img'] = null;
+        }
+    }
+
+      /**
+     * Set advertisement image
+     * 
+     * @param string $file
+     */
+    public function setAdvertisementsMobileImgAttribute($file)
+    {
+        
+        if ($file) {
+            if (is_string($file)) {
+                $this->attributes['advertisements_mobile_img'] = $file;
+            } else {
+                $current_name = $this->currentName($file);
+
+                $this->originalImage($file, $current_name);
+                $this->mediumImage($file, $current_name,null,400); 
+                $this->thumbImage($file, $current_name,100,null);
+
+                $this->attributes['advertisements_mobile_img'] = $current_name;
+            }
+        } else {
+            $this->attributes['advertisements_mobile_img'] = null;
+        }
+    }
 
      /**
      * Many to one relation with shop.

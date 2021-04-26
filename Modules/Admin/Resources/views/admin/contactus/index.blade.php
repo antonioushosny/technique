@@ -30,14 +30,7 @@
 						        <option value="0" {{ old('status') === '0' ? 'selected' : '' }}>{{ __('admin::lang.new') }}</option>
 						      </select>
                 </div>
-                <div class="form-group col-12 col-md-2 text-center">
-						      <select class="form-control" name="type">
-						        <option value="">{{ __('admin::lang.selectType') }}</option>
-						        <option value="2" {{ old('type') === '2' ? 'selected' : '' }}>{{ __('admin::lang.Unspecified') }}</option>
-						        <option value="1" {{ old('type') === '1' ? 'selected' : '' }}>{{ __('admin::lang.Suggestion') }}</option>
-						        <option value="0" {{ old('type') === '0' ? 'selected' : '' }}>{{ __('admin::lang.complaint') }}</option>
-						      </select>
-                </div>
+         
                 <div class="form-group col-12 col-md-2 text-center">
                 	<button type="submit" class="btn btn-primary btn-sm"><i class="fa fa-search"></i></button>
                 	<button type="button" class="btn btn-secondary btn-sm search-reset"><i class="fa fa-ban"></i></button>
@@ -56,8 +49,8 @@
           		<div class="col-12 col-md-3 text-center"><strong>{{ __('admin::lang.name') }}</strong></div>
           		<div class="col-12 col-md-2 text-center"><strong>{{ __('admin::lang.phone') }}</strong></div>
           		<div class="col-12 col-md-2 text-center"><strong>{{ __('admin::lang.email') }}</strong></div>
-          		<div class="col-12 col-md-1 text-center"><strong>{{ __('admin::lang.type') }}</strong></div>
-          		<div class="col-12 col-md-1 text-center"><strong>{{ __('admin::lang.status') }}</strong></div>
+      
+          		<div class="col-12 col-md-2 text-center"><strong>{{ __('admin::lang.status') }}</strong></div>
           		<div class="col-12 col-md-2 text-center"><strong>{{ __('admin::lang.actions') }}</strong></div>
           	</div>
           </div>
@@ -97,21 +90,8 @@
 	          				<div class="col-8 col-md-12">{{ $contact->contact_us_email }}</div>
 	          			</div>
 	          		</div>
-	          		<div class="col-12 col-md-1 text-md-center">
-	          			<div class="row mb-2 mb-md-0">
-	          				<div class="col-4 d-block d-md-none"><strong>{{ __('admin::lang.type') }}</strong></div>
-	          				<div class="col-8 col-md-12">
-	          					@if ($contact->contact_us_type == 2)
-									  <span class="p-2 badge badge-warning">{{ __('admin::lang.Unspecified') }}</span>
-								@elseif ($contact->contact_us_type == 1)
-	          						<span class="p-2 badge badge-success">{{ __('admin::lang.Suggestion') }}</span>
-	          					@else
-	          						<span class="p-2 badge badge-secondary">{{ __('admin::lang.complaint') }}</span>
-	          					@endif
-	          				</div>
-	          			</div>
-	          		</div> 
-					<div class="col-12 col-md-1 text-md-center">
+	          	 
+					<div class="col-12 col-md-2 text-md-center">
 	          			<div class="row mb-2 mb-md-0">
 	          				<div class="col-4 d-block d-md-none"><strong>{{ __('admin::lang.status') }}</strong></div>
 	          				<div class="col-8 col-md-12">

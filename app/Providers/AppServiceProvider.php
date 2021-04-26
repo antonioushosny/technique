@@ -10,7 +10,7 @@ use Modules\Admin\Models\Contact;
 use Jenssegers\Agent\Agent;
 use auth ;
 use Illuminate\Http\Request;
- 
+use Modules\Admin\Models\Advertisement;
 use Illuminate\Routing\Controller;
 class AppServiceProvider extends ServiceProvider
 {
@@ -62,8 +62,8 @@ class AppServiceProvider extends ServiceProvider
  
         $agent = new Agent();
         $contacts = Contact::first() ;
- 
-        view()->share(compact('segment', 'urlQuery', 'locale', 'dir', 'langs','agent','contacts'));
+        $advertisements = Advertisement::all() ;
+        view()->share(compact('segment', 'urlQuery', 'locale', 'dir', 'langs','agent','contacts','advertisements'));
 
 
         // view()->share(compact( 'locale', 'dir'));

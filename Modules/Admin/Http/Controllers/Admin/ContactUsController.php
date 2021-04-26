@@ -48,8 +48,9 @@ class ContactUsController extends Controller
      * @param  \Modules\Admin\Models\ContactUs  $contactus
      * @return \Illuminate\Http\Response
      */
-    public function show(ContactUs $contactus)
+    public function show( $id)
     {
+        $contactus = ContactUs::find($id);
         return view('admin::admin.contactus.show', compact('contactus'));
     }
      
@@ -59,9 +60,9 @@ class ContactUsController extends Controller
      * @param  \Modules\Admin\Models\ContactUs  $city
      * @return \Illuminate\Http\Response
      */
-    public function edit(ContactUs $contactus)
+    public function edit( $id)
     {
-        
+        $contactus = ContactUs::find($id);
         $contactus->contact_us_status = '1' ;
         $contactus->save();
         
@@ -73,9 +74,9 @@ class ContactUsController extends Controller
      * @param  \Modules\Admin\Models\ContactUs  $city
      * @return \Illuminate\Http\Response
      */
-    public function destroy(ContactUs $contactus)
+    public function destroy( $id)
     {
-        
+        $contactus = ContactUs::find($id);
         $contactus->delete();
         
         return back()->with('status', __('admin::lang.contactusDeleted'));

@@ -72,6 +72,43 @@
                     </a>
                   </li>
                 @endcanany
+
+                {{-- news Links --}}
+                @canany(['view news'])
+                  <li class="nav-item px-3">
+                    <a class="nav-link"   href="{{ route('admin.news.index') }}" >
+                      {{ __('admin::lang.news') }}
+                    </a>
+                  </li>
+                @endcanany
+
+                {{-- videos Links --}}
+                @canany(['view videos'])
+                  <li class="nav-item px-3">
+                    <a class="nav-link"   href="{{ route('admin.videos.index') }}" >
+                      {{ __('admin::lang.videos') }}
+                    </a>
+                  </li>
+                @endcanany
+                
+                {{-- comparisons Links --}}
+                @canany(['view comparisons'])
+                  <li class="nav-item px-3">
+                    <a class="nav-link"   href="{{ route('admin.comparisons.index') }}" >
+                      {{ __('admin::lang.comparisons') }}
+                    </a>
+                  </li>
+                @endcanany
+                
+                {{-- phones Links --}}
+                @canany(['view phones'])
+                  <li class="nav-item px-3">
+                    <a class="nav-link"   href="{{ route('admin.phones.index') }}" >
+                      {{ __('admin::lang.phones') }}
+                    </a>
+                  </li>
+                @endcanany
+
                 {{-- contactus Links --}}
                 @canany(['view contactus'])
                   <li class="nav-item px-3">

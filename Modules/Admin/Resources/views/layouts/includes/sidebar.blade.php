@@ -48,7 +48,61 @@
         </li>
       @endcanany
   
- 
+     
+      {{-- advertisements Link --}}
+      @canany(['view advertisements'])
+        <li class="nav-item">
+            @can('view advertisements')
+              <a class="nav-link" href="{{ route('admin.advertisements.index') }}" >
+                <i class="nav-icon fa fa-list"></i> {{ __('admin::lang.advertisements') }}
+              </a>
+            @endcan
+        </li>
+      @endcanany
+
+      {{-- news Link --}}
+      @canany(['view news'])
+        <li class="nav-item">
+            @can('view news')
+              <a class="nav-link" href="{{ route('admin.news.index') }}" >
+                <i class="nav-icon fa fa-list"></i> {{ __('admin::lang.news') }}
+              </a>
+            @endcan
+        </li>
+      @endcanany
+
+      {{-- vidoes Link --}}
+      @canany(['view vidoes'])
+        <li class="nav-item">
+            @can('view vidoes')
+              <a class="nav-link" href="{{ route('admin.vidoes.index') }}" >
+                <i class="nav-icon fa fa-list"></i> {{ __('admin::lang.vidoes') }}
+              </a>
+            @endcan
+        </li>
+      @endcanany
+      
+      {{-- comparisons Link --}}
+      @canany(['view comparisons'])
+        <li class="nav-item">
+            @can('view comparisons')
+              <a class="nav-link" href="{{ route('admin.comparisons.index') }}" >
+                <i class="nav-icon fa fa-list"></i> {{ __('admin::lang.comparisons') }}
+              </a>
+            @endcan
+        </li>
+      @endcanany
+      
+      {{-- phones Link --}}
+      @canany(['view phones'])
+        <li class="nav-item">
+            @can('view phones')
+              <a class="nav-link" href="{{ route('admin.phones.index') }}" >
+                <i class="nav-icon fa fa-list"></i> {{ __('admin::lang.phones') }}
+              </a>
+            @endcan
+        </li>
+      @endcanany
    
       {{-- Admins Links --}}
       @canany(['view admins', 'view roles'])

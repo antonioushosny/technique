@@ -19,11 +19,16 @@
         <link rel="stylesheet" href="{{ asset('front/css/bootstrap-rtl.css') }}">
     @else
         <link rel="stylesheet" href="{{ asset('front/css/bootstrap.css') }}">
-    @endif
-    
+    @endif  
+      
     <link rel="stylesheet" href="{{ asset('front/css/fontawesome.min.css') }}">
     <link rel="stylesheet" href="{{ asset('front/css/jquery.fancybox.min.css') }}">
-   
+
+    <link rel="stylesheet" href="{{ asset('front/css/custom.css') }}">
+    @if($dir == 'rtl')
+        <link rel="stylesheet" href="{{ asset('front/css/custom-rtl.css') }}">
+    @endif 
+    <link href="{{ asset('vendors/select2/css/select2.min.css') }}" rel="stylesheet">
 
     @yield('style')
   
@@ -39,7 +44,7 @@
         <span class="loader-inner"></span>
     </span>  
     
-
+    @include('includes.navbar')
     <div class="page-wrapper chiller-theme  ">
        
         <!-- sidebar-wrapper  -->
@@ -51,23 +56,17 @@
     <!-- page-wrapper -->
 
     
-  
+    @include('includes.footer')
     {{-- Scripts --}}
     <script src="{{ asset('front/js/jquery.min.js') }}"></script>
     <script src="{{ asset('front/js/popper.min.js') }}"></script>
+    <script src="{{ asset('front/js/bootstrap.min.js') }}"></script>
 
-    @if($dir == 'rtl')
-        {{-- RTL Scripts --}}
-        <script src="{{ asset('front/js/bootstrap.min.js') }}"></script>
-    @else
-        <script src="{{ asset('front/js/bootstrap.min.js') }}"></script>
-    @endif
+ 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+     <script src="{{ asset('vendors/select2/js/select2.min.js') }}"></script>
+    <!-- <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script> -->
 
-    <script src="{{ asset('vendors/select2/js/select2.min.js') }}"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-
-    @yield('script1')
-    @yield('script2')
     @yield('script')
 
    

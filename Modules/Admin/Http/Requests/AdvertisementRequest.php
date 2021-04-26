@@ -30,31 +30,25 @@ class AdvertisementRequest extends FormRequest
         $rules = [
             'advertisements_name'       => 'required|min:2',
             'advertisements_status'     => 'required',
-            'advertisements_view_page'  => 'required',
+            // 'advertisements_view_page'  => 'required',
             'advertisements_url'        => 'nullable|url',
-            // 'advertisements_img'     => 'required|image',
-            // 'advertisements_mobile_img' => 'required|image',
+            'advertisements_img'     => 'required|image',
+            'advertisements_mobile_img' => 'required|image',
         ];
 
       
 
         $data = $this->request->get('advertisements_view_page');
-        // if($data && $data == 'home_banner'){
+ 
             $languages = Language::active()->get();
             foreach ($languages as $language) {
-                // $rules[$language->locale. '.advertisements_text'] = 'required';
-                $rules[$language->locale. '.advertisements_img'] = 'required|image';
-                $rules[$language->locale. '.advertisements_mobile_img'] = 'required|image';
+                
             }
             if ($this->isMethod('PUT')) {
-                foreach ($languages as $language) {
-                    $rules[$language->locale. '.advertisements_img'] = 'nullable|image';
-                    $rules[$language->locale. '.advertisements_mobile_img'] = 'nullable|image';
-                }
-            
+                $rules['advertisements_img'] = 'nullable|image';
+                $rules['advertisements_mobile_img'] = 'nullable|image';
             }
-            $rules['advertisements_color'] = 'required';
-        // }
+     
 
         return $rules;
     }

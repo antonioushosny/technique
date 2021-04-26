@@ -5,7 +5,7 @@ return [
 	 * General
 	 */ 
 	'home' 					=> 'الرئيسية',
-	'siteTitle'				=>	'ابافيس',
+	'siteTitle'				=>	'تقنية',
 	'adminPanel'			=>	'لوحة التحكم',
 	'selectStatus' 			=> 'أختر الحالة',
 	'website'				=>	'الموقع',
@@ -53,12 +53,12 @@ return [
 	'type'					=>	'النوع',
 	'message'				=>	'الرسالة',
 	'phone'					=>	'الجوال',
-	'infos'					=>	'نبذة عن ابافيس    ',
+	'infos'					=>	'نبذة عن تقنية    ',
 	'privacyPolicy'			=>	'سياسة الاستخدام',
 	'termsConditions'		=>	'الشروط والاحكام',
-	'info'					=>	'عن ابافيس ',
+	'info'					=>	'عن تقنية ',
 	'page'					=>	'الصفحة',
-	'aboutProject'			=>	'عن ابافيس',
+	'aboutProject'			=>	'عن تقنية',
 	'connectWithUs'			=> 'تواصل معنا',
 	'gps'					=>	'احداثيات الخريطة',
 	'createdDone'			=>	'تمت الاضافة بنجاح',
@@ -132,6 +132,54 @@ return [
 	'advertisements_text' 	=> ' نص الاعلان',
 	'mobile_img' 			=> 'صورة الجوال ',
 
+		
+	/**
+	 * Phones
+	 */
+	'phones' 		=> 'الأجهزة',
+	'phoneDetails'	=>	'تفاصيل الجهاز',
+	'phoneCreated' 	=> 'تم انشاء جهاز',
+	'phoneUpdated' 	=> 'تم تعديل جهاز',
+	'phoneDeleted' 	=> 'تم حذف جهاز',
+	'phones_title' 	=> 'اسم الجهاز',
+	'phones_image' 	=> 'صورة الجهاز',
+	
+	/**
+	 * News
+	 */
+	'news' 			=> 'الأخبار',
+	'newDetails'	=>	'تفاصيل الخير',
+	'newCreated' 	=> 'تم انشاء خبر',
+	'newUpdated' 	=> 'تم تعديل خبر ',
+	'newDeleted' 	=> 'تم حذف خبر',
+	'news_title' 	=> 'عنوان الخبر',
+	'news_desc' 	=> 'نص الخبر',
+	'news_image' 	=> 'صورة الخبر',
+	 
+	/**
+	 * Videos
+	 */
+	'videos' 		=> 'الفيديوهات',
+	'videoDetails'	=>	'تفاصيل الفيديو',
+	'videoCreated' 	=> 'تم اضافة فيديو',
+	'videoUpdated' 	=> 'تم تعديل فيديو',
+	'videoDeleted' 	=> 'تم حذف فيديو',
+	'videos_title' 	=> 'عنوان الفيديو',
+	'videos_url'	=> 'رابط الفيديو',
+	'video'			=> 'الفيديو',
+
+		/**
+	 * Comparisons
+	 */
+	'comparisons' 		=> 'المقارنات',
+	'comparisonDetails'	=>	'تفاصيل بيانات المقارنة',
+	'comparisonCreated' => 'تم اضافة بيان مقارنة',
+	'comparisonUpdated' => 'تم تعديل بيان مقارنة ',
+	'comparisonDeleted' => 'تم حذف بيان مقارنة',
+	'comparisons_title' 	=> 'عنوان بيان المقارنة',
+	'phones_comparisons_text_ar'=> 'نص المقارنة بالعربي',
+	'phones_comparisons_text_en'=> 'نص المقارنة بالإنجليزي',
+	'phoneComparisonUpdated'	=> "تم تحديث بيانات المقارنة" ,
 
 	/**
 	 * Notifications
@@ -171,6 +219,9 @@ return [
 	'complaint'                 =>  'شكوى',
     'Suggestion'                =>  'اقتراح ',
 	'Unspecified'                =>  'غير محدد ',
+	'contactusCreated'		=> 'تم اضافة رسالة',
+	'contactusUpdated'		=> 'تم تحديث رسالة',
+	'contactusDeleted'		=> 'تم حذف رسالة',
 	
 	/**
 	 * contacts
@@ -195,6 +246,7 @@ return [
 	'infoDeleted' 			=> 'تم حذف المعلوة',
 	'info_key'				=>	'العنوان',
 	'info_value'			=>	'النص',
+	'info_about'			=> 'عن تقنية ',
 	'info_desc'				=>	'الوصف',
 	'info_mission'			=>	'المهمة',
 	'info_vision'			=>	'الرؤية',

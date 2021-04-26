@@ -16,7 +16,6 @@
 
     <link rel="icon" href="{{ asset('backend/imf/logo.png') }}" type="image/png" sizes="16x16">
  
-    
     <!-- Icons-->
     <link href="{{ asset('vendors/@coreui/icons/css/coreui-icons.min.css') }}" rel="stylesheet">
     <link href="{{ asset('vendors/flag-icon-css/css/flag-icon.min.css') }}" rel="stylesheet">

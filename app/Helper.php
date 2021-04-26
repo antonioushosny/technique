@@ -6,6 +6,7 @@ use Modules\Admin\Models\Service;
 use Modules\Admin\Models\MetaTag;
 use Modules\Admin\Models\Slug;
 use Modules\Admin\Models\SlugTranslation;
+use Modules\Admin\Models\PhoneComparison;
  /**
  * Get static Setting by it's key
  */
@@ -29,11 +30,23 @@ function getInfoByKey($key)
 }
 
 /**
+ * Get Phone Comparison 
+ */
+function getPhoneComparison($phones_id,$comparisons_id)
+{
+    $comparison = PhoneComparison::join('phone_comparison_translations', 'phone_comparisons.phones_comparisons_id', 'phone_comparison_translations.phones_comparisons_id')
+        ->where('phone_comparisons.phones_id', $phones_id)
+        ->where('phone_comparisons.comparisons_id', $comparisons_id)
+        ->first();
+
+    return $comparison;
+}
+
+/**
  * Get MetaTag by Page key
  */
 function getMetaByKey($key)
 {
-
     $meta = MetaTag::where('metatags_page', $key)
         ->first();
 
