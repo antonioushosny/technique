@@ -165,7 +165,7 @@
             <div class="col-md-4 col-12 mr-0 col-white-op-70 font-13 pull-{{ $dir == 'ltr' ? 'right' : 'left' }}">
                 <span class="copper-color fb-500">{{ __('lang.copyrightText') }}   </span>
                 <a href="#" target="_blank">
-                    <img src="{{ $dir == 'ltr' ? asset('front/images/logo.png') : asset('front/images/logo.png') }}  " class="img-fluid p{{ $dir == 'ltr' ? 'l' : 'r' }}-2" alt="" width="100px">
+                    <img src="{{ $dir == 'ltr' ? asset('front/images/logo.jpeg') : asset('front/images/logo.jpeg') }}  " class="img-fluid p{{ $dir == 'ltr' ? 'l' : 'r' }}-2" alt="" width="100px">
                 </a>
     	    </div>
          </div>
