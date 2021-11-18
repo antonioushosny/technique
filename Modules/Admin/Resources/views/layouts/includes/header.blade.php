@@ -13,7 +13,7 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <a class=" col-lg-1 col-md-2 navbar-brand" href="{{ route('admin.dashboard.home') }}">
-          <img class="d-md-down-none" src="{{ asset('backend/img/logo.jpeg') }}" height="25" alt="{{__('admin::lang.siteTitle')}}">
+          <img class="d-md-down-none" src="{{ asset('backend/img/logo.png') }}" height="25" alt="{{__('admin::lang.siteTitle')}}">
 
           <img class="d-lg-none" src="{{ asset($locale == 'ar' ? 'front/images/logo-ar.png' : 'front/images/logo-en.png') }}" height="30" alt="{{__('admin::lang.siteTitle')}}">
         </a>

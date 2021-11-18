@@ -22,7 +22,7 @@
 			<div class="col-md-4 col-sm-6 col-12 py-2">
 				<div class="card shadow-sm">
 					<img src="{{$new->news_image ? asset($new->images_url($new->news_image, 'medium')) : asset('img/no-image.png') }}" class="card-img-top" alt="..." height="300px">
-					<div class="card-body bg-pale-grey-dark color-marine">
+					<div class="py-2 bg-pale-grey-dark color-marine">
 						<h5 class="card-title"><a href="{{route('news.show',$new->news_id)}}" class="color-marine">{{$new->news_title}}</a></h5>
 						<!-- <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
 					 

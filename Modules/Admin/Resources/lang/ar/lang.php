@@ -52,7 +52,7 @@ return [
 	'choose'				=>	'اختار',
 	'type'					=>	'النوع',
 	'message'				=>	'الرسالة',
-	'phone'					=>	'الجوال',
+	'phone'					=>	'الجهاز',
 	'infos'					=>	'نبذة عن تقنية    ',
 	'privacyPolicy'			=>	'سياسة الاستخدام',
 	'termsConditions'		=>	'الشروط والاحكام',

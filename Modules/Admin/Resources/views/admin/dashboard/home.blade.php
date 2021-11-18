@@ -11,7 +11,7 @@
 					<div class="card mt-5 bg-transparent border-0">
 						
 						<div class="card-body text-center">
-							<img src="{{ asset('backend/img/logo.jpeg') }}" class="img-fluid ">
+							<img src="{{ asset('backend/img/logo.png') }}" class="img-fluid ">
 
 						</div>
 					</div>	

@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3">
+<nav class="navbar navbar-expand-lg navbar-dark   py-3 text-white bg-marine">
   <div class="container-fluid">
     <a class="navbar-brand" href="{{route('home')}}">{{__('admin::lang.siteTitle')}}</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -27,7 +27,10 @@
       
     </ul>
     <form class="form-inline my-2 my-lg-0 ">
-        <a class="color-white" href="{{$locale == 'ar' ? route('lang','en') : route('lang','ar')}}"  >{{ $locale == 'ar' ? 'English' : 'عربي'}}</a>
+      
+      <a class="color-white" href="{{$locale == 'ar' ? route('lang','en') : route('lang','ar')}}"  >{{ $locale == 'ar' ? 'English' : 'عربي'}}</a>
+
+      <img src="{{ $dir == 'ltr' ? asset('backend/img/logo.png') : asset('backend/img/logo.png') }}  " class="ml-3 img-fluid p{{ $dir == 'ltr' ? 'l' : 'r' }}-2" alt="" width="100px">
     </form>
   </div>
 

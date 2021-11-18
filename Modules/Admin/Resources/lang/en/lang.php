@@ -52,7 +52,7 @@ return [
 	'choose'				=>	'Choose',
 	'type'					=>	'Type',
 	'message'				=>	'Message',
-	'phone'					=>	'Phone',
+	'phone'					=>	'Device',
 	'infos'					=>	'About Technique',
 	'info'					=>	'About Technique',
 	'privacyPolicy'			=>	'Privacy Policy',
@@ -124,13 +124,13 @@ return [
 	/**
 	 * Phones
 	 */
-	'phones' 		=> 'Phones',
-	'phoneDetails'	=>	'Phone Details',
-	'phoneCreated' 	=> 'Phone Created',
-	'phoneUpdated' 	=> 'Phone Updated',
-	'phoneDeleted' 	=> 'Phone Deleted',
-	'phones_title' 	=> 'Phone Name',
-	'phones_image' 	=> 'Phone Image',
+	'phones' 		=> 'Devices',
+	'phoneDetails'	=>	'Device Details',
+	'phoneCreated' 	=> 'Device Created',
+	'phoneUpdated' 	=> 'Device Updated',
+	'phoneDeleted' 	=> 'Device Deleted',
+	'phones_title' 	=> 'Device Name',
+	'phones_image' 	=> 'Device Image',
  
 	
 	/**

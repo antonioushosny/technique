@@ -26,7 +26,8 @@
 						<h5 class="card-title color-marine">{{$phone->phones_title}}</h5>					 
 					</div>
 					<div class="card-footer text-center bg-red">
-					<a href="{{route('comparisons',['phones_id'=>$phone->phones_id])}}" class="color-white">{{__('lang.addToCompare')}}</a>
+					
+					<a href="{{route('comparisons',['phones_id'=>$phone->phones_id])}}" class="color-white"><i class="fa fa-balance-scale" aria-hidden="true"></i> {{__('lang.addToCompare')}}</a>
 					</div>
 				</div>
 			</div>

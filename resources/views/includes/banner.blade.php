@@ -12,9 +12,9 @@
         @foreach($advertisements as $advertisement)
         <div class="carousel-item {{$loop->first ? 'active' : '' }}">
             @if($agent->isPhone())
-            <img src="{{$advertisement->advertisements_mobile_img ? asset($advertisement->images_url($advertisement->advertisements_mobile_img, 'original')) : asset('img/no-image.png')}}"  width="1100" height="500">
+            <img src="{{$advertisement->advertisements_mobile_img ? asset($advertisement->images_url($advertisement->advertisements_mobile_img, 'original')) : asset('img/no-image.png')}}" class="img-contain contain-img"   height="500">
             @else 
-            <img src="{{$advertisement->advertisements_img ? asset($advertisement->images_url($advertisement->advertisements_img, 'original')) : asset('img/no-image.png')}}"  width="1100" height="400">
+            <img src="{{$advertisement->advertisements_img ? asset($advertisement->images_url($advertisement->advertisements_img, 'original')) : asset('img/no-image.png')}}"  class="img-contain contain-img" height="300">
             @endif
         </div>
         @endforeach

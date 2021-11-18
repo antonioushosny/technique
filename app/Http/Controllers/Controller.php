@@ -42,7 +42,7 @@ class Controller extends BaseController
         "payload"=>array("my-data-item"=>"my-data-value"),
         "timestamp"=>date('Y-m-d G:i:s'),
         'sound' => 'default', 'badge' =>'1',
-        "icon"=>"adam/public/front/images/logo.jpeg",
+        "icon"=>"adam/public/backend/img/logo.png",
         "click_action"=>"/adam",
         ), "priority" => "high",
         "data"=>  array( "message"=>$message ,

@@ -11,17 +11,25 @@
 <!-- last news section  -->
 <section class="py-5 text-center container ">
 	<div class="row py-lg-5">
-      	<div class="col-lg-6 col-md-8 mx-auto">
+      	<div class="col-lg-6 col-md-8 text-left">
         	<h1 class="fw-light">{{__('lang.lastNews')}}</h1>
 		</div>
+		<div class="col-lg-4 col-md-4 text-right">
+			<a href="{{route('news')}}" class="">{{__('lang.more')}}</a>
+		</div>
 	</div>
+	<!-- <div class="row  ">
+      	<div class="col-lg-6 col-md-8 mx-auto">
+        	<p class="fw-light">{{__('lang.descNews')}}</p>
+		</div>
+	</div> -->
 	<div class="row">
 		@foreach($last_news as $new)
-			<div class="col-md-4 col-sm-6 col-12 py-2">
-				<div class="card shadow-sm">
+			<div class="col-md-3 col-sm-6 col-12 py-2">
+				<div class="  ">
 					<img src="{{$new->news_image ? asset($new->images_url($new->news_image, 'medium')) : asset('img/no-image.png') }}" class="card-img-top" alt="..." height="300px">
-					<div class="card-body bg-pale-grey-dark color-marine">
-						<h5 class="card-title"><a href="{{route('news.show',$new->news_id)}}" class="color-marine">{{$new->news_title}}</a></h5>
+					<div class="card-body bg-pale-grey-dark text-left color-marine">
+						<span class="card-title"><a href="{{route('news.show',$new->news_id)}}" class="color-marine">{{$new->news_title}}</a></h5>
 						<!-- <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
 					 
 					</div>
@@ -35,11 +43,12 @@
 </section>
 
  <!-- last videos section  -->
-<section class="container-fluid bg-marine color-white">
+<section class="container-fluid bg-white-two color-marine">
 	<div class="py-5 text-center container">
 		<div class="row py-lg-5">
 			<div class="col-lg-6 col-md-8 mx-auto">
 				<h1 class="fw-light">{{__('lang.lastVideos')}}</h1>
+				<a href="{{route('videos')}}" class="fw-light">{{__('lang.more')}}</a>
 			</div>
 		</div>
 		<div class="row">
@@ -47,7 +56,7 @@
 				<div class="col-md-4 col-sm-6 col-12 py-2">
 					<div class="card shadow-sm">
 						<iframe width="100%" height="315" allowfullscreen="true" src="{{$video->videos_url}}"> </iframe>
-						<div class="card-body bg-pale-grey-dark color-marine">
+						<div class="py-2 bg-pale-grey-dark color-marine">
 							<h5 class="card-title color-marine">{{$video->videos_title}}</h5>
 						</div>
 					</div>
@@ -57,7 +66,7 @@
 	</div>
 </section>
 
-<!-- last news section  -->
+<!-- last Phones section  -->
 <section class="py-5 text-center container ">
 	<div class="row py-lg-5">
       	<div class="col-lg-6 col-md-8 mx-auto">
@@ -73,7 +82,10 @@
 						<h5 class="card-title color-marine">{{$phone->phones_title}}</h5>					 
 					</div>
 					<div class="card-footer text-center bg-red">
-					<a href="{{route('comparisons',['phones_id'=>$phone->phones_id])}}" class="color-white">{{__('lang.addToCompare')}}</a>
+					<a href="{{route('comparisons',['phones_id'=>$phone->phones_id])}}" class="color-white">
+					<i class="fa fa-balance-scale" aria-hidden="true"></i>
+						{{__('lang.addToCompare')}}
+					</a>
 					</div>
 				</div>
 			</div>

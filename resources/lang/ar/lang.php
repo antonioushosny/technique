@@ -11,6 +11,7 @@ return [
     'compare'                   => 'قارن',
     'copyRights'                => 'جميع الحقوق ',
     'reserved'                  => 'محفوظة',
+    'descNews'                  =>'sjdfjsdfjkhsdjfhsdjhfsdhfjh',
 
     "home"                      => 'الرئيسية',
     'aboutCompany'	            =>	'عن الشركة',
@@ -44,8 +45,8 @@ return [
     'send'                      => 'ارسال',
     'ContactUs'                 => 'اتصل بنا',
     'name'                      =>'الاسم',
-    'placeholderPhone'          => 'ادخل رقم الجوال' ,
-    'phone'                    => 'الجوال',
+    'placeholderPhone'          => 'ادخل رقم الجهاز' ,
+    'phone'                    => 'الجهاز',
     'sendSuccessfuly'           => 'تم الارسال بنجاح ' ,
 
 ];

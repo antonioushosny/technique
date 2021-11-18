@@ -11,6 +11,7 @@ return [
     'compare'                   => 'Compare',
     'copyRights'                => 'Copy Rights ',
     'reserved'                  => 'Are Reserved',
+    'descNews'                  =>'sjdfjsdfjkhsdjfhsdjhfsdhfjh',
    
     "home"                      => 'Home',
     'aboutCompany'	            => 'About',

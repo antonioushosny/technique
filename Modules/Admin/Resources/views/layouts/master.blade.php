@@ -14,7 +14,7 @@
     
     <title>{{ __('admin::lang.siteTitle') }} | {{ __('admin::lang.adminPanel') }}</title>
 
-    <link rel="icon" href="{{ asset('backend/imf/logo.jpeg') }}" type="image/png" sizes="16x16">
+    <link rel="icon" href="{{ asset('backend/imf/logo.png') }}" type="image/png" sizes="16x16">
  
     <!-- Icons-->
     <link href="{{ asset('vendors/@coreui/icons/css/coreui-icons.min.css') }}" rel="stylesheet">

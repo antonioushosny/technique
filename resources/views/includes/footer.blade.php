@@ -1,18 +1,4 @@
-<!-- <footer class="text-muted py-5">
-  <div class="container">
-      <div class="row">
-          <div class="col-md-3 text-left">
-            <p class="float-end mb-1">
-                <a href="#" class="btn btn-danger"> <i class="fa fa-arrow-up"></i> </a>
-            </p>
-          </div>
-          <div class="col-md-9 text-right">
-            <p class="mb-1">{{__('lang.copyRights')}} &copy; {{__('lang.reserved')}} {{date('Y')}} </p>
-          </div>
-      </div>
-    
-  </div>
-</footer> -->
+ 
 
 <div class="container-fluid bg-marine pt-3  " >
   <!-- Footer Links -->
@@ -25,20 +11,20 @@
       <div class="col-md-3 mx-auto ">
 
         <!-- Links -->
-        <h5 class="font-weight-bold  font-16 col-white-op-70 text-uppercase  "> {{__('admin::lang.aboutus')}}</h5>
+        <h5 class="font-weight-bold  font-16 text-white text-uppercase text-white  "> {{__('admin::lang.aboutus')}}</h5>
 
         <ul class="list-unstyled font-weight-normal p-1">
             <li>
-                <a href="{{route('aboutUs')}}" class=" col-white-op-70 font-13" >{{__('admin::lang.aboutProject')}}</a>
+                <a href="{{route('aboutUs')}}" class=" text-white font-13" >{{__('admin::lang.aboutProject')}}</a>
             </li>
        
             <li>
-                <a href="{{route('news')}}" class=" col-white-op-70 font-13" >{{__('admin::lang.news')}}</a>
+                <a href="{{route('news')}}" class=" text-white font-13" >{{__('admin::lang.news')}}</a>
             </li>
          
           
             <li>
-                <a href="{{route('contactus')}}" class=" col-white-op-70 font-13" >{{__('lang.contactWithUs')}}</a>
+                <a href="{{route('contactus')}}" class=" text-white font-13" >{{__('lang.contactWithUs')}}</a>
             </li>
 
         </ul>
@@ -52,14 +38,14 @@
       <div class="col-md-3 mx-auto   ">
 
         <!-- Links -->
-        <h5 class="font-weight-bold font-16 col-white-op-70 text-uppercase ">{{__('lang.policies')}}</h5>
+        <h5 class="font-weight-bold font-16 text-white text-uppercase text-white">{{__('lang.policies')}}</h5>
 
         <ul class="list-unstyled font-weight-normal p-1">
             <li>
-                <a href="{{route('policy')}}" class=" col-white-op-70 font-13" >{{__('lang.policy')}}</a>
+                <a href="{{route('policy')}}" class=" text-white font-13" >{{__('lang.policy')}}</a>
             </li>
             <li>
-                <a href="{{route('terms')}}" class=" col-white-op-70 font-13" >{{__('admin::lang.termsConditions')}}</a>
+                <a href="{{route('terms')}}" class=" text-white font-13" >{{__('admin::lang.termsConditions')}}</a>
             </li>
           
         </ul>
@@ -73,7 +59,7 @@
       <div class="col-md-3 mx-auto  ">
 
         <!-- Links -->
-        <h5 class="font-weight-bold  font-16 col-white-op-70 text-uppercase d-none  ">{{__('lang.importLinks')}}</h5>
+        <h5 class="font-weight-bold  font-16 text-white text-uppercase d-none  ">{{__('lang.importLinks')}}</h5>
 
         <ul class="list-unstyled font-weight-normal p-1">
  
@@ -88,7 +74,7 @@
         <div class="col-md-3 mx-auto text-center">
 
             <!-- Links -->
-            <h5 class="font-weight-bold  font-16 col-white-op-70 text-uppercase  ">{{__('lang.keepInTouch')}}</h5>
+            <h5 class="font-weight-bold  font-16 text-white text-uppercase  ">{{__('lang.keepInTouch')}}</h5>
 
             <ul class="list-unstyled font-weight-normal p-1  ">
 
@@ -133,10 +119,16 @@
 
   <!-- Copyright -->
     <div class="container">
-        <div class="row footer-copyright col-white-op-70 font-13 mb-4 text-center">
-            <div class="col-md-12   col-12  " >
-                &copy; <?php echo date('Y')." ".__('lang.rightsReserved')?></span>
+        <div class="row footer-copyright text-white font-13 mb-4 text-center">
+            <div class="col-md-6  col-12  " >
+                <?php echo date('Y')." &copy;  ".__('lang.rightsReserved')?></span>
             </div>
+            <div class="col-md-6 col-12 mr-0  font-13 pull-{{ $dir == 'ltr' ? 'right' : 'left' }}">
+                <span class="copper-color fb-500">{{ __('lang.copyrightText') }}   </span>
+                <a href="#" target="_blank">
+                    <img src="{{ $dir == 'ltr' ? asset('backend/img/logo.png') : asset('backend/img/logo.png') }}  " class="img-fluid p{{ $dir == 'ltr' ? 'l' : 'r' }}-2" alt="" width="100px">
+                </a>
+    	    </div>
   
         </div>
     </div>
@@ -150,22 +142,22 @@
 
         <div class="row align-items-center ">
             <div class="col-12 mr-0 mb-md-0 mb-3 " >
-                <a href="{{route('policy')}}" > <span class="statics-links col-white-op-70 mx-md-1 font-13" >   {{__('lang.policy')}}<span></a>
+                <a href="{{route('policy')}}" > <span class="statics-links text-white mx-md-1 font-13" >   {{__('lang.policy')}}<span></a>
                 <span class="color-lipstick font-13 mx-md-1">|</span>
-                <a href="{{route('terms')}}" > <span class="statics-links col-white-op-70 mx-md-1 font-13" >   {{__('lang.terms')}} <span> </a>
+                <a href="{{route('terms')}}" > <span class="statics-links text-white mx-md-1 font-13" >   {{__('lang.terms')}} <span> </a>
                 <span class="color-lipstick font-13 mx-md-1">|</span>
-                <a href="{{route('contactus')}}" > <span class="statics-links col-white-op-70 mx-md-1 font-13" > {{__('lang.contactWithUs')}}<span> </a>
+                <a href="{{route('contactus')}}" > <span class="statics-links text-white mx-md-1 font-13" > {{__('lang.contactWithUs')}}<span> </a>
           
  
 
             </div>
-            <div class="col-md-8 col-12 mr-0 col-white-op-70 font-13" >
+            <div class="col-md-8 col-12 mr-0 text-white font-13" >
                 <span>{{__('lang.rightsReserved')}}   &copy; <?php echo date('Y'); ?> </span>
             </div>
-            <div class="col-md-4 col-12 mr-0 col-white-op-70 font-13 pull-{{ $dir == 'ltr' ? 'right' : 'left' }}">
+            <div class="col-md-4 col-12 mr-0 text-white font-13 pull-{{ $dir == 'ltr' ? 'right' : 'left' }}">
                 <span class="copper-color fb-500">{{ __('lang.copyrightText') }}   </span>
                 <a href="#" target="_blank">
-                    <img src="{{ $dir == 'ltr' ? asset('front/images/logo.jpeg') : asset('front/images/logo.jpeg') }}  " class="img-fluid p{{ $dir == 'ltr' ? 'l' : 'r' }}-2" alt="" width="100px">
+                    <img src="{{ $dir == 'ltr' ? asset('backend/img/logo.png') : asset('backend/img/logo.png') }}  " class="img-fluid p{{ $dir == 'ltr' ? 'l' : 'r' }}-2" alt="" width="100px">
                 </a>
     	    </div>
          </div>

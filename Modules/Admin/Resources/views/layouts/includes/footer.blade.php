@@ -12,7 +12,7 @@
         {{ __('admin::lang.siteTitle') }}
       </span>
       <img
-        src={{ asset('backend/img/logo.jpeg') }}
+        src={{ asset('backend/img/logo.png') }}
         alt="siteTitle"
         className="img-fluid mx-3 brand-img"
         style="width: 45px"
